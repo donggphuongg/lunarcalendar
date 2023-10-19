@@ -1,0 +1,150 @@
+/* For mobile */
+#left_panel {
+    float: left;
+    width: 100%;
+}
+#tb_navigator {
+    font-size: 100%;
+    width: 100%;
+}
+#sl_timezone {
+    font-size: 80%;
+    cursor: pointer;
+    width: 100%;
+}
+#ip_month {
+    font-size: 80%;
+    cursor: pointer;
+    width: 100%;
+}
+#bt_reset {
+    font-size: 80%;
+    cursor: pointer;
+    width: 100%;
+}
+#tb_month {
+    font-size: 100%;
+    width:100%;
+    user-select: none;
+}
+.cell_normal {
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+}
+.cell_hover {
+    border: 1px dashed rgb(0,128,255);
+    border-radius: 10px;
+}
+.cell_selected {
+    border: 1px solid rgb(0,128,255);
+    border-radius: 10px;
+}
+.date_normal {
+    user-select: none;
+    cursor: pointer;
+    width: 96%;
+    text-align: center;
+    font-size: 120%;
+    margin: 2%;
+    background: white;
+    color: #606060;
+}
+.date_sunday {
+    user-select: none;
+    cursor: pointer;
+    width: 96%;
+    text-align: center;
+    font-size: 120%;
+    margin: 2%;
+    background: white;
+    color: #ff8080;
+}
+.date_today {
+    user-select: none;
+    cursor: pointer;
+    width: 96%;
+    text-align: center;
+    font-size: 120%;
+    margin: 2%;
+    background: rgb(96,192,255);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+#right_panel {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 250%;
+    user-select: none;
+    overflow: hidden;
+}
+#date_panel_0 {
+    position: absolute;
+    padding: 2%;
+    font-size: 100%;
+    width: 96%;
+    height: 100%;
+    background: white;
+}
+#date_panel_1 {
+    position: absolute;
+    padding: 2%;
+    font-size: 100%;
+    width: 96%;
+    height: 100%;
+    background: white;
+}
+#date_panel_2 {
+    position: absolute;
+    padding: 2%;
+    font-size: 100%;
+    width: 96%;
+    height: 100%;
+    background: white;
+}
+.date_hide {
+    top: 100%;
+    transition: 0.75s ease;
+}
+.date_show {
+    top: 0;
+    transition: 0.75s ease;
+}
+.date_mid {
+    z-index: -1;
+}
+.date_behind {
+    z-index: -2;
+}
+.topMY {
+    width: 100%;
+    height: auto;
+}
+.midSD {
+    width: 100%;
+    height: auto;
+}
+.botInf {
+    width: 100%;
+    height: auto;
+}
+body {
+    font-size: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* For tablet and desktop */
+@media only screen and (min-width:800px) {
+    #left_panel {
+        width: 60%;
+    }
+    #right_panel {
+        width: 40%;
+    }
+    body {
+        font-size: 120%;
+    }
+    #tb_month {
+        font-size: 140%;
+    }
+}

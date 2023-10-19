@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>LUNAR CALENDAR</title>
+        <link rel='icon' type='image/x-icon' href='./imgs/calendar.ico'>
+        <link rel='stylesheet' href='./code/style.css'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <script type='text/javascript' src='./code/code.js'></script>
+        <script type='text/javascript' src='./code/lunarcalendar.js'></script>
+    </head>
+    <body onload='page_load()'>
+        <div id='left_panel'>
+            <table id='tb_navigator'>
+                <tr>
+                    <td>
+                        <select id='sl_timezone' onchange='sl_timezone_change()'>
+                            <option selected>+7</option>
+                            <option>+8</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type='month' id='ip_month' onchange='ip_month_change()'>
+                    </td>
+                    <td>
+                        <button id='bt_reset' onclick='bt_reset_click()'>Reset</button>
+                    </td>
+                </tr>
+            </table>
+            <table id='tb_month'></table>
+        </div>
+        <div id='right_panel'>
+            
+        </div>
+    </body>
+</html>
